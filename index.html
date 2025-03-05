@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hxr.me | Haxor Community</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+    <!-- Matrix Background -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Circuit Lines -->
+    <div class="circuit-line" style="left: 20%; animation-delay: 0s"></div>
+    <div class="circuit-line" style="left: 50%; animation-delay: 1.5s"></div>
+    <div class="circuit-line" style="left: 80%; animation-delay: 2.5s"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">hxr.me</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center position-relative">
+            <h1 class="display-1 fw-bold gradient-text mb-4">Haxor Syndicate</h1>
+            <p class="lead mb-4">Advanced Cybersecurity Solutions & Ethical Hacking Resources</p>
+            <a href="#contact" class="btn btn-gradient btn-lg px-5 py-3">Join Underground</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="gradient-text fw-bold">Core Competencies</h2>
+                    <p class="text-accent">Master the Digital Underground</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card p-4">
+                        <i class="fas fa-terminal fa-3x gradient-text mb-3"></i>
+                        <h3 class="text-accent">System Exploitation</h3>
+                        <p class="text-secondary">Advanced privilege escalation and vulnerability analysis techniques
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card p-4">
+                        <i class="fas fa-fingerprint fa-3x gradient-text mb-3"></i>
+                        <h3 class="text-accent">Cryptography</h3>
+                        <p class="text-secondary">Modern encryption methods and cryptographic system analysis</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card p-4">
+                        <i class="fas fa-brain fa-3x gradient-text mb-3"></i>
+                        <h3 class="text-accent">AI Security</h3>
+                        <p class="text-secondary">Machine learning model protection and adversarial AI research</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" style="position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Cyber Badge -->
+                <div class="col-lg-6">
+                    <div class="cyber-card p-4 position-relative">
+                        <div class="hacker-badge"></div>
+                        <h2 class="gradient-text fw-bold mb-4">About <span class="text-accent">// Haxor Syndicate</span>
+                        </h2>
+                        <p class="lead text-secondary mb-4">
+                            We are a collective of ethical cybersecurity experts operating at the intersection of
+                            advanced technology and digital security. Established in 2012, our operations span
+                            penetration testing, vulnerability research, and next-gen defense systems development.
+                        </p>
+                        <div class="cyber-stats row">
+                            <div class="col-4 text-center">
+                                <div class="stat-box">
+                                    <div class="gradient-text fw-bold display-5">15+</div>
+                                    <small class="text-uppercase text-accent">Years</small>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="stat-box">
+                                    <div class="gradient-text fw-bold display-5">240+</div>
+                                    <small class="text-uppercase text-accent">Projects</small>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="stat-box">
+                                    <div class="gradient-text fw-bold display-5">500+</div>
+                                    <small class="text-uppercase text-accent">Member</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Cyber Elements -->
+                <div class="col-lg-6">
+                    <div class="cyber-globe position-relative">
+                        <div class="network-grid"></div>
+                        <div class="rotating-core">
+                            <div class="core-layer"></div>
+                            <div class="core-layer"></div>
+                            <div class="core-layer"></div>
+                        </div>
+                        <div class="floating-shards">
+                            <div class="shard"></div>
+                            <div class="shard"></div>
+                            <div class="shard"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-5" style="position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="gradient-text fw-bold">// Cyber Operations</h2>
+                    <p class="text-accent">Specialized Security Services</p>
+                </div>
+            </div>
+
+            <!-- Service Tabs -->
+            <div class="cyber-tabs mb-5">
+                <nav>
+                    <div class="nav nav-pills justify-content-center" id="nav-tab" role="tablist">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#offensive" type="button">
+                            <i class="fas fa-crosshairs me-2"></i>Offensive Security
+                        </button>
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#defensive" type="button">
+                            <i class="fas fa-shield-alt me-2"></i>Defensive Security
+                        </button>
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#intel" type="button">
+                            <i class="fas fa-brain me-2"></i>Cyber Intelligence
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="nav-tabContent">
+                <!-- Offensive Security -->
+                <div class="tab-pane fade show active" id="offensive">
+                    <div class="row g-4">
+                        <!-- Existing Penetration Testing Card -->
+                        <div class="col-md-4">
+                            <div class="service-card hack-animation">
+                                <div class="service-icon">
+                                    <i class="fas fa-bug"></i>
+                                    <div class="particles"></div>
+                                </div>
+                                <h3 class="text-accent">Penetration Testing</h3>
+                                <p class="text-secondary">Full-spectrum vulnerability assessment and exploitation</p>
+                                <ul class="service-features">
+                                    <li>Network Penetration</li>
+                                    <li>Web Application Testing</li>
+                                    <li>Social Engineering</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Red Team Operations -->
+                        <div class="col-md-4">
+                            <div class="service-card hack-animation">
+                                <div class="service-icon">
+                                    <i class="fas fa-user-secret"></i>
+                                    <div class="particles"></div>
+                                </div>
+                                <h3 class="text-accent">Red Team Operations</h3>
+                                <p class="text-secondary">Real-world attack simulation & infrastructure breach testing
+                                </p>
+                                <ul class="service-features">
+                                    <li>Advanced Persistent Threat Simulation</li>
+                                    <li>Physical Security Testing</li>
+                                    <li>Zero-Day Exploitation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Malware Analysis -->
+                        <div class="col-md-4">
+                            <div class="service-card hack-animation">
+                                <div class="service-icon">
+                                    <i class="fas fa-virus"></i>
+                                    <div class="particles"></div>
+                                </div>
+                                <h3 class="text-accent">Malware Analysis</h3>
+                                <p class="text-secondary">Advanced malware reverse engineering and analysis</p>
+                                <ul class="service-features">
+                                    <li>Static/Dynamic Analysis</li>
+                                    <li>Behavioral Profiling</li>
+                                    <li>Payload Decryption</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Defensive Security -->
+                <div class="tab-pane fade" id="defensive">
+                    <div class="row g-4">
+                        <!-- Threat Detection -->
+                        <div class="col-md-4">
+                            <div class="service-card hack-animation">
+                                <div class="service-icon">
+                                    <i class="fas fa-shield-virus"></i>
+                                    <div class="particles"></div>
+                                </div>
+                                <h3 class="text-accent">Threat Detection</h3>
+                                <p class="text-secondary">Advanced network monitoring and anomaly detection</p>
+                                <ul class="service-features">
+                                    <li>SIEM Implementation</li>
+                                    <li>Behavioral Analytics</li>
+                                    <li>Real-time Alerts</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Incident Response -->
+                        <div class="col-md-4">
+                            <div class="service-card hack-animation">
+                                <div class="service-icon">
+                                    <i class="fas fa-first-aid"></i>
+                                    <div class="particles"></div>
+                                </div>
+                                <h3 class="text-accent">Incident Response</h3>
+                                <p class="text-secondary">24/7 emergency security breach response</p>
+                                <ul class="service-features">
+                                    <li>Forensic Analysis</li>
+                                    <li>Containment Strategies</li>
+                                    <li>Post-Incident Reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Security Audits -->
+                        <div class="col-md-4">
+                            <div class="service-card hack-animation">
+                                <div class="service-icon">
+                                    <i class="fas fa-unlock"></i>
+                                    <div class="particles"></div>
+                                </div>
+                                <h3 class="text-accent">Security Audits</h3>
+                                <p class="text-secondary">Comprehensive system and policy reviews</p>
+                                <ul class="service-features">
+                                    <li>Compliance Checks</li>
+                                    <li>Architecture Review</li>
+                                    <li>Policy Development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cyber Intelligence -->
+                <div class="tab-pane fade" id="intel">
+                    <div class="row g-4">
+                        <!-- Threat Intelligence -->
+                        <div class="col-md-4">
+                            <div class="service-card hack-animation">
+                                <div class="service-icon">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                    <div class="particles"></div>
+                                </div>
+                                <h3 class="text-accent">Threat Intelligence</h3>
+                                <p class="text-secondary">Real-time cyber threat monitoring and analysis</p>
+                                <ul class="service-features">
+                                    <li>Dark Web Monitoring</li>
+                                    <li>APT Group Tracking</li>
+                                    <li>Vulnerability Feeds</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Digital Forensics -->
+                        <div class="col-md-4">
+                            <div class="service-card hack-animation">
+                                <div class="service-icon">
+                                    <i class="fas fa-search-dollar"></i>
+                                    <div class="particles"></div>
+                                </div>
+                                <h3 class="text-accent">Digital Forensics</h3>
+                                <p class="text-secondary">Advanced digital evidence collection and analysis</p>
+                                <ul class="service-features">
+                                    <li>Data Recovery</li>
+                                    <li>Memory Analysis</li>
+                                    <li>Chain of Custody</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dark Web Monitoring -->
+                        <div class="col-md-4">
+                            <div class="service-card hack-animation">
+                                <div class="service-icon">
+                                    <i class="fas fa-skull-crossbones"></i>
+                                    <div class="particles"></div>
+                                </div>
+                                <h3 class="text-accent">Dark Web Monitoring</h3>
+                                <p class="text-secondary">Continuous monitoring of underground markets</p>
+                                <ul class="service-features">
+                                    <li>Credential Monitoring</li>
+                                    <li>Brand Protection</li>
+                                    <li>Leak Detection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Background Elements -->
+            <div class="binary-stream"></div>
+            <div class="security-mesh"></div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="gradient-text fw-bold">// Shadow Council</h2>
+                    <p class="text-accent">Core Operations Team</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="team-card">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_mwQESLMp5tK6oTmV2NHuMpu3jnw2292wfNcPJPDnijqNg=s900-c-k-c0x00ffffff-no-rj"
+                            class="team-img" alt="Member 1">
+                        <h4 class="mt-3 text-accent">LilyXploit</h4>
+                        <p class="text-secondary">Lead Penetration Tester</p>
+                        <div class="team-skills">
+                            <span class="skill-badge">Web Developer</span>
+                            <span class="skill-badge">SEO Specialist</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="team-card">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_mwQESLMp5tK6oTmV2NHuMpu3jnw2292wfNcPJPDnijqNg=s900-c-k-c0x00ffffff-no-rj"
+                            class="team-img" alt="Member 2">
+                        <h4 class="mt-3 text-accent">Cipher</h4>
+                        <p class="text-secondary">Cryptography Specialist</p>
+                        <div class="team-skills">
+                            <span class="skill-badge">Encryption</span>
+                            <span class="skill-badge">Data Protection</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="team-card">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_mwQESLMp5tK6oTmV2NHuMpu3jnw2292wfNcPJPDnijqNg=s900-c-k-c0x00ffffff-no-rj"
+                            class="team-img" alt="Member 3">
+                        <h4 class="mt-3 text-accent">Ghost</h4>
+                        <p class="text-secondary">AI Security Researcher</p>
+                        <div class="team-skills">
+                            <span class="skill-badge">Machine Learning</span>
+                            <span class="skill-badge">Adversarial AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="team-card">
+                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_mwQESLMp5tK6oTmV2NHuMpu3jnw2292wfNcPJPDnijqNg=s900-c-k-c0x00ffffff-no-rj"
+                            class="team-img" alt="Member 4">
+                        <h4 class="mt-3 text-accent">Vortex</h4>
+                        <p class="text-secondary">Incident Response Expert</p>
+                        <div class="team-skills">
+                            <span class="skill-badge">Forensics</span>
+                            <span class="skill-badge">Threat Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5" style="position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="gradient-text fw-bold">// Verified Protocols</h2>
+                    <p class="text-accent">Client Security Endorsements</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card glitch-card">
+                        <div class="hacker-mark">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-right gradient-text"></i>
+                            </div>
+                            <p class="testimonial-text">"Their red team exposed vulnerabilities we never knew existed.
+                                The most comprehensive penetration test we've ever experienced."</p>
+                            <div class="client-info">
+                                <h4 class="text-accent">ZeroDay Solutions</h4>
+                                <p class="text-secondary">Chief Security Officer</p>
+                                <div class="verification-badge">
+                                    <i class="fas fa-shield-check gradient-text"></i>
+                                    Verified Audit
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card glitch-card">
+                        <div class="hacker-mark">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-right gradient-text"></i>
+                            </div>
+                            <p class="testimonial-text">"Prevented a major data breach through their dark web
+                                monitoring. Their threat intelligence is second to none."</p>
+                            <div class="client-info">
+                                <h4 class="text-accent">CryptoBank International</h4>
+                                <p class="text-secondary">Head of Cybersecurity</p>
+                                <div class="verification-badge">
+                                    <i class="fas fa-shield-check gradient-text"></i>
+                                    Verified Case
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="col-md-4">
+                    <div class="testimonial-card glitch-card">
+                        <div class="hacker-mark">
+                            <i class="fas fa-skull-crossbones"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-right gradient-text"></i>
+                            </div>
+                            <p class="testimonial-text">"Their forensic analysis helped us trace and neutralize an APT
+                                group. Response time and expertise exceeded expectations."</p>
+                            <div class="client-info">
+                                <h4 class="text-accent">NeuroTech Industries</h4>
+                                <p class="text-secondary">CTO</p>
+                                <div class="verification-badge">
+                                    <i class="fas fa-shield-check gradient-text"></i>
+                                    Verified Incident
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Elements -->
+        <div class="testimonial-glitch"></div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="gradient-text fw-bold">// Security FAQ</h2>
+                    <p class="text-accent">Common Questions from Our Clients</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Question 1 -->
+                <div class="col-md-6">
+                    <div class="cyber-card faq-card">
+                        <div class="accordion">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed cyber-accordion" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        <i class="fas fa-shield-halved me-2"></i>
+                                        What cybersecurity services do you provide?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse">
+                                    <div class="accordion-body bg-dark-2">
+                                        We offer comprehensive security solutions including penetration testing,
+                                        vulnerability assessments, incident response, threat monitoring,
+                                        and security awareness training. All services are tailored to meet
+                                        both enterprise and government security requirements.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="col-md-6">
+                    <div class="cyber-card faq-card">
+                        <div class="accordion">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed cyber-accordion" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        <i class="fas fa-clock me-2"></i>
+                                        How quickly can you respond to a security incident?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse">
+                                    <div class="accordion-body bg-dark-2">
+                                        Our emergency response team is available 24/7 with guaranteed:
+                                        <ul class="mt-2">
+                                            <li>15-minute initial response time</li>
+                                            <li>1-hour containment protocol activation</li>
+                                            <li>4-hour preliminary report delivery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="col-md-6">
+                    <div class="cyber-card faq-card">
+                        <div class="accordion">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed cyber-accordion" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        <i class="fas fa-user-lock me-2"></i>
+                                        Are your operations confidential?
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse">
+                                    <div class="accordion-body bg-dark-2">
+                                        We enforce strict NDAs and operate under zero-trace protocols.
+                                        Client engagements are protected by:
+                                        <ul class="mt-2">
+                                            <li>End-to-end encrypted communication</li>
+                                            <li>Non-disclosure agreements (NDA)</li>
+                                            <li>Data minimization principles</li>
+                                            <li>Secure document destruction policies</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="col-md-6">
+                    <div class="cyber-card faq-card">
+                        <div class="accordion">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed cyber-accordion" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        <i class="fas fa-certificate me-2"></i>
+                                        Do you offer security guarantees?
+                                    </button>
+                                </h3>
+                                <div id="faq4" class="accordion-collapse collapse">
+                                    <div class="accordion-body bg-dark-2">
+                                        We provide industry-leading assurances including:
+                                        <ul class="mt-2">
+                                            <li>100% compliance with remediation plans</li>
+                                            <li>Post-engagement support for 90 days</li>
+                                            <li>\$2 million cyber liability insurance</li>
+                                            <li>Continuous vulnerability monitoring</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="col-md-6">
+                    <div class="cyber-card faq-card">
+                        <div class="accordion">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed cyber-accordion" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq5">
+                                        <i class="fas fa-gear me-2"></i>
+                                        How do we start working together?
+                                    </button>
+                                </h3>
+                                <div id="faq5" class="accordion-collapse collapse">
+                                    <div class="accordion-body bg-dark-2">
+                                        Our onboarding process includes 3 simple steps:
+                                        <ol class="mt-2">
+                                            <li>Initial consultation (free of charge)</li>
+                                            <li>Scope definition and agreement</li>
+                                            <li>Secure engagement portal activation</li>
+                                        </ol>
+                                        Average setup time: 48-72 hours
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="col-md-6">
+                    <div class="cyber-card faq-card">
+                        <div class="accordion">
+                            <div class="accordion-item border-0 bg-transparent">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed cyber-accordion" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq6">
+                                        <i class="fas fa-users me-2"></i>
+                                        What industries do you specialize in?
+                                    </button>
+                                </h3>
+                                <div id="faq6" class="accordion-collapse collapse">
+                                    <div class="accordion-body bg-dark-2">
+                                        We have extensive experience across regulated sectors:
+                                        <ul class="mt-2">
+                                            <li>Financial Services & Banking</li>
+                                            <li>Healthcare & Pharmaceuticals</li>
+                                            <li>Government & Defense</li>
+                                            <li>Blockchain & Cryptocurrency</li>
+                                            <li>Critical Infrastructure</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simplified Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="gradient-text fw-bold">// Send me message</h2>
+                    <p class="text-accent">Encrypted Communication Only</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <div class="cyber-card p-4 mb-4">
+                        <form id="simpleContactForm">
+                            <div class="mb-4">
+                                <input type="text" class="form-control cyber-input" placeholder="You hacker name"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control cyber-input" placeholder="Use anonymous email"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control cyber-input" rows="4" placeholder="Encrypted Message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gradient w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Encrypted Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="cyber-card p-4">
+                        <div class="row text-center">
+                            <div class="col-md-4 mb-3">
+                                <div class="contact-method">
+                                    <i class="fas fa-key fa-2x gradient-text"></i>
+                                    <p class="mt-2 mb-0 text-accent">PGP: 0x1A2B3C4D</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="contact-method">
+                                    <i class="fas fa-lock fa-2x gradient-text"></i>
+                                    <p class="mt-2 mb-0 text-accent">@haxor:matrix.org</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="contact-method">
+                                    <i class="fab fa-monero fa-2x gradient-text"></i>
+                                    <p class="mt-2 mb-0 text-accent">XMR: 84F3a...7e9D1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <!-- Upper Section with Links and Info -->
+            <div class="row justify-content-between align-items-center mb-4 text-center text-md-start">
+                <!-- Brand and Description -->
+                <div class="col-md-4 mb-3">
+                    <h4 class="gradient-text fw-bold">hxr.me</h4>
+                    <p class="text-secondary">Your trusted partner in advanced ethical hacking and cybersecurity
+                        solutions.</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-light fw-bold mb-3">// Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-secondary text-decoration-none d-block mb-2">Home</a></li>
+                        <li><a href="#about" class="text-secondary text-decoration-none d-block mb-2">About Us</a></li>
+                        <li><a href="#services" class="text-secondary text-decoration-none d-block mb-2">Services</a>
+                        </li>
+                        <li><a href="#contact" class="text-secondary text-decoration-none d-block">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-light fw-bold mb-3">// Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-envelope gradient-text me-2"></i>
+                            <span class="text-secondary">contact@hxr.me</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="fas fa-key gradient-text me-2"></i>
+                            <span class="text-secondary">PGP: 0x1A2B3C4D</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-lock gradient-text me-2"></i>
+                            <span class="text-secondary">@haxor:matrix.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="text-secondary">
+
+            <!-- Bottom Section with Social Icons -->
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-3 mb-md-0 text-secondary">
+                    &copy; 2025 hxr.me | Digital Frontier Security. All Rights Reserved.
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-end">
+                        <a href="#" class="text-secondary mx-2"><i class="fab fa-github fa-2x"></i></a>
+                        <a href="#" class="text-secondary mx-2"><i class="fas fa-lock fa-2x"></i></a>
+                        <a href="#" class="text-secondary mx-2"><i class="fab fa-btc fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
